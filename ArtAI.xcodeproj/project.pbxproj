@@ -36,6 +36,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		923868622B6FFD4D0038489C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		928360E12B5E86370007C350 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +64,7 @@
 			children = (
 				928360ED2B5E86380007C350 /* ArtAIApp.swift */,
 				928360EF2B5E86380007C350 /* ContentView.swift */,
+				923868622B6FFD4D0038489C /* Login */,
 				92A395EF2B69164900FE1F47 /* Helpers */,
 				92A395EE2B69163100FE1F47 /* Onboarding */,
 				928360F12B5E86390007C350 /* Assets.xcassets */,

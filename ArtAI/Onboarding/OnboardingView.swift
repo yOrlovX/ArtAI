@@ -34,14 +34,13 @@ struct OnboardingView: View {
 
 private extension OnboardingView {
     private var firstOnboardingState: some View {
-        ZStack {
-//            GeometryReader { proxy in
-                Image("onboarding_1")
-                    .resizable()
-                    .scaledToFill()
-//                    .frame(width: proxy.size.width, height: proxy.size.height * 0.6)
-                    .opacity(0.6)
-//            }
+        ZStack(alignment: .top) {
+            Image("onboarding1")
+                .resizable()
+                .scaledToFill()
+                .frame(height: UIScreen.main.bounds.height * 0.7)
+                .frame(width: UIScreen.main.bounds.width)
+                .opacity(0.6)
             VStack(spacing: 14) {
                 Spacer()
                 Text("Create \nartwork \nwith AI")
@@ -67,14 +66,12 @@ private extension OnboardingView {
     }
     
     private var secondOnboardingState: some View {
-        VStack {
-            GeometryReader { proxy in
-                Image("onboarding_2")
-                    .resizable()
-                    .scaledToFill()
-//                    .frame(width: proxy.size.width, height: proxy.size.height * 0.6)
-                    .opacity(0.6)
-            }
+        ZStack(alignment: .top) {
+            Image("onboarding2")
+                .resizable()
+                .scaledToFill()
+                .frame(height: UIScreen.main.bounds.height * 0.7)
+                .opacity(0.6)
             VStack(spacing: 14) {
                 Spacer()
                 Text("Create \nartwork \nwith AI")
@@ -100,14 +97,12 @@ private extension OnboardingView {
     }
     
     private var thirdOnboardingState: some View {
-        VStack {
-            GeometryReader { proxy in
-                Image("onboarding_3")
-                    .resizable()
-                    .scaledToFill()
-//                    .frame(height: proxy.size.height * 0.5)
-                    .opacity(0.6)
-            }
+        ZStack(alignment: .top) {
+            Image("onboarding3")
+                .resizable()
+                .scaledToFill()
+                .frame(height: UIScreen.main.bounds.height * 0.7)
+                .opacity(0.6)
             VStack(spacing: 14) {
                 Spacer()
                 Text("Create \nartwork \nwith AI")
