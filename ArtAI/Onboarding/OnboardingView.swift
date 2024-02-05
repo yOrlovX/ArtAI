@@ -11,6 +11,7 @@ enum OnboardingState {
     case first
     case second
     case third
+    case authentication
 }
 
 struct OnboardingView: View {
@@ -27,6 +28,8 @@ struct OnboardingView: View {
                 secondOnboardingState
             case .third:
                 thirdOnboardingState
+            case .authentication:
+                AuthenticationView()
             }
         }
     }
@@ -53,13 +56,7 @@ private extension OnboardingView {
                     .foregroundColor(.gray)
                 Button(action: { onboardingState = .second }) {
                     Text("Get started")
-                        .foregroundColor(.black)
-                        .font(.system(size: 16, weight: .semibold))
-                        .frame(maxWidth: .infinity, maxHeight: 48)
-                        .background(Colors.lightGreen)
-                        .cornerRadius(4)
-                        .padding(.horizontal, 24)
-                        .padding(.top, 20)
+                        .modifier(PrimaryButtonModifier())
                 }
             }
         }
@@ -84,13 +81,7 @@ private extension OnboardingView {
                     .foregroundColor(.gray)
                 Button(action: { onboardingState = .third }) {
                     Text("Get started")
-                        .foregroundColor(.black)
-                        .font(.system(size: 16, weight: .semibold))
-                        .frame(maxWidth: .infinity, maxHeight: 48)
-                        .background(Colors.lightGreen)
-                        .cornerRadius(4)
-                        .padding(.horizontal, 24)
-                        .padding(.top, 20)
+                        .modifier(PrimaryButtonModifier())
                 }
             }
         }
@@ -113,15 +104,9 @@ private extension OnboardingView {
                     .font(.system(size: 14))
                     .multilineTextAlignment(.center)
                     .foregroundColor(.gray)
-                Button(action: {}) {
+                Button(action: { onboardingState = .authentication }) {
                     Text("Get started")
-                        .foregroundColor(.black)
-                        .font(.system(size: 16, weight: .semibold))
-                        .frame(maxWidth: .infinity, maxHeight: 48)
-                        .background(Colors.lightGreen)
-                        .cornerRadius(4)
-                        .padding(.horizontal, 24)
-                        .padding(.top, 20)
+                        .modifier(PrimaryButtonModifier())
                 }
             }
         }
