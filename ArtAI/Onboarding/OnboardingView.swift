@@ -54,6 +54,7 @@ private extension OnboardingView {
                     .font(.system(size: 14))
                     .multilineTextAlignment(.center)
                     .foregroundColor(.gray)
+                    .padding(.horizontal, 24)
                 Button(action: { onboardingState = .second }) {
                     Text("Get started")
                         .modifier(PrimaryButtonModifier())
@@ -68,6 +69,7 @@ private extension OnboardingView {
                 .resizable()
                 .scaledToFill()
                 .frame(height: UIScreen.main.bounds.height * 0.7)
+                .frame(width: UIScreen.main.bounds.width)
                 .opacity(0.6)
             VStack(spacing: 14) {
                 Spacer()
@@ -79,6 +81,7 @@ private extension OnboardingView {
                     .font(.system(size: 14))
                     .multilineTextAlignment(.center)
                     .foregroundColor(.gray)
+                    .padding(.horizontal, 24)
                 Button(action: { onboardingState = .third }) {
                     Text("Get started")
                         .modifier(PrimaryButtonModifier())
@@ -93,6 +96,7 @@ private extension OnboardingView {
                 .resizable()
                 .scaledToFill()
                 .frame(height: UIScreen.main.bounds.height * 0.7)
+                .frame(width: UIScreen.main.bounds.width)
                 .opacity(0.6)
             VStack(spacing: 14) {
                 Spacer()
@@ -104,6 +108,7 @@ private extension OnboardingView {
                     .font(.system(size: 14))
                     .multilineTextAlignment(.center)
                     .foregroundColor(.gray)
+                    .padding(.horizontal, 24)
                 Button(action: { onboardingState = .authentication }) {
                     Text("Get started")
                         .modifier(PrimaryButtonModifier())
