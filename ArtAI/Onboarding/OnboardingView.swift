@@ -44,6 +44,16 @@ private extension OnboardingView {
                 .frame(height: UIScreen.main.bounds.height * 0.7)
                 .frame(width: UIScreen.main.bounds.width)
                 .opacity(0.6)
+            HStack {
+                Spacer()
+                Button(action: { onboardingState = .authentication }) {
+                    Image(systemName: "xmark")
+                        .resizable()
+                        .frame(width: 36, height: 36)
+                        .foregroundColor(.white)
+                        .padding(24)
+                }
+            }
             VStack(spacing: 14) {
                 Spacer()
                 Text("Create \nartwork \nwith AI")
@@ -71,6 +81,16 @@ private extension OnboardingView {
                 .frame(height: UIScreen.main.bounds.height * 0.7)
                 .frame(width: UIScreen.main.bounds.width)
                 .opacity(0.6)
+            HStack {
+                Spacer()
+                Button(action: { onboardingState = .authentication }) {
+                    Image(systemName: "xmark")
+                        .resizable()
+                        .frame(width: 36, height: 36)
+                        .foregroundColor(.white)
+                        .padding(24)
+                }
+            }
             VStack(spacing: 14) {
                 Spacer()
                 Text("Create \nartwork \nwith AI")
@@ -98,6 +118,16 @@ private extension OnboardingView {
                 .frame(height: UIScreen.main.bounds.height * 0.7)
                 .frame(width: UIScreen.main.bounds.width)
                 .opacity(0.6)
+            HStack {
+                Spacer()
+                Button(action: { onboardingState = .authentication }) {
+                    Image(systemName: "xmark")
+                        .resizable()
+                        .frame(width: 36, height: 36)
+                        .foregroundColor(.white)
+                        .padding(24)
+                }
+            }
             VStack(spacing: 14) {
                 Spacer()
                 Text("Create \nartwork \nwith AI")
