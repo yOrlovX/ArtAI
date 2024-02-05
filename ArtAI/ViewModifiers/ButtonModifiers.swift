@@ -35,3 +35,27 @@ struct ClearButtonModifier: ViewModifier {
             .padding(.top, 20)
     }
 }
+
+struct GoogleButtonModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .foregroundColor(.black)
+            .font(.system(size: 16, weight: .semibold))
+            .frame(maxWidth: .infinity, maxHeight: 48)
+            .background(.white)
+            .padding(.horizontal, 24)
+            .padding(.top, 20)
+    }
+}
+
+struct AppleButtonModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .foregroundColor(.black)
+            .font(.system(size: 16, weight: .semibold))
+            .frame(maxWidth: .infinity, maxHeight: 48)
+            .background(.white)
+            .padding(.horizontal, 24)
+            .padding(.top, 20)
+    }
+}

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct AuthenticationView: View {
+    @State private var showCreateAccountSheet = false
+    
     var body: some View {
         ZStack(alignment: .top) {
             Color.black
@@ -29,7 +31,7 @@ struct AuthenticationView: View {
                             .font(.system(size: 48))
                             .multilineTextAlignment(.center)
                             .foregroundColor(Colors.lightGreen)
-                        Button(action: {}) {
+                        Button(action: { showCreateAccountSheet.toggle() }) {
                             Text("Create an Account")
                                 .modifier(PrimaryButtonModifier())
                         }
@@ -40,6 +42,10 @@ struct AuthenticationView: View {
                     }
                 }
             }
+        }
+        .sheet(isPresented: $showCreateAccountSheet) {
+            CreateAccountSheetView()
+                .presentationDetents([.medium])
         }
     }
 }
