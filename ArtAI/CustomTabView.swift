@@ -11,20 +11,21 @@ struct CustomTabView: View {
     @Binding var tabSelection: Int
     @Namespace private var animationNamespace
     
-    let tabItems = ["house","magnifyingglass","plus","bell","person.crop.circle"]
+    let tabItems = ["house","magnifyingglass","plus.circle","bell","person.crop.circle"]
     
     var body: some View {
         ZStack {
             Capsule()
-                .frame(height: 80)
+                .frame(height: 72)
             
-            HStack(spacing: 20) {
+            HStack(spacing: 25) {
                 ForEach(0..<5) { index in
                     Button(action: { tabSelection = index + 1 }) {
                         Image(systemName: tabItems[index])
                             .resizable()
-                            .frame(width: 40, height: 40)
+                            .frame(width: 24, height: 24)
                             .foregroundColor(index + 1 == tabSelection ? Colors.lightGreen : .gray)
+                            .padding(8)
                             
                     }
                 }
