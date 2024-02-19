@@ -11,15 +11,15 @@ struct TabBarView: View {
     @State private var selectedTab = 1
     var body: some View {
         TabView(selection: $selectedTab) {
-            Text("Tab 1")
+            HomeView()
                 .tag(1)
-            Text("Tab 2")
+            Text("Search View")
                 .tag(2)
-            Text("Tab 3")
+            Text("Generate Image View")
                 .tag(3)
-            Text("Tab 4")
+            Text("Activity View")
                 .tag(4)
-            Text("Tab 5")
+            Text("Profile View")
                 .tag(5)
         }
         .overlay(alignment: .bottom) {

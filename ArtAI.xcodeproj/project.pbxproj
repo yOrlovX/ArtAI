@@ -16,6 +16,8 @@
 		92A395F32B69175400FE1F47 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A395F22B69175400FE1F47 /* Colors.swift */; };
 		92B73FC72B70C18C005DE046 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B73FC62B70C18C005DE046 /* AuthenticationView.swift */; };
 		92B73FCA2B70C425005DE046 /* ButtonModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B73FC92B70C425005DE046 /* ButtonModifiers.swift */; };
+		92BEF2BF2B73AA2F0096EB6E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BEF2BE2B73AA2F0096EB6E /* HomeView.swift */; };
+		92BEF2C12B73AE8E0096EB6E /* RecomendedForYouCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BEF2C02B73AE8E0096EB6E /* RecomendedForYouCell.swift */; };
 		92D1E0CC2B737C7E00C6F5CC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D1E0CB2B737C7E00C6F5CC /* LoginView.swift */; };
 		92D1E0CE2B737EF500C6F5CC /* CompleteProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D1E0CD2B737EF500C6F5CC /* CompleteProfileView.swift */; };
 		92D1E0D02B738CD100C6F5CC /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D1E0CF2B738CD100C6F5CC /* TabBarView.swift */; };
@@ -36,6 +38,8 @@
 		92A395F22B69175400FE1F47 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		92B73FC62B70C18C005DE046 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		92B73FC92B70C425005DE046 /* ButtonModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifiers.swift; sourceTree = "<group>"; };
+		92BEF2BE2B73AA2F0096EB6E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		92BEF2C02B73AE8E0096EB6E /* RecomendedForYouCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendedForYouCell.swift; sourceTree = "<group>"; };
 		92D1E0CB2B737C7E00C6F5CC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		92D1E0CD2B737EF500C6F5CC /* CompleteProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteProfileView.swift; sourceTree = "<group>"; };
 		92D1E0CF2B738CD100C6F5CC /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				928360ED2B5E86380007C350 /* ArtAIApp.swift */,
+				92BEF2BD2B73AA210096EB6E /* Home */,
 				92A395EE2B69163100FE1F47 /* Onboarding */,
 				923868622B6FFD4D0038489C /* Authentication */,
 				928B87612B7107AA00938786 /* Profile */,
@@ -141,6 +146,15 @@
 				92E747C22B7122F300B3B753 /* ToggleCheckBoxStyle.swift */,
 			);
 			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		92BEF2BD2B73AA210096EB6E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				92BEF2BE2B73AA2F0096EB6E /* HomeView.swift */,
+				92BEF2C02B73AE8E0096EB6E /* RecomendedForYouCell.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +230,7 @@
 				928B87632B7107CE00938786 /* ProfileView.swift in Sources */,
 				92D1E0CE2B737EF500C6F5CC /* CompleteProfileView.swift in Sources */,
 				92D1E0D02B738CD100C6F5CC /* TabBarView.swift in Sources */,
+				92BEF2BF2B73AA2F0096EB6E /* HomeView.swift in Sources */,
 				92A395F12B6916A000FE1F47 /* OnboardingView.swift in Sources */,
 				92A395F32B69175400FE1F47 /* Colors.swift in Sources */,
 				92E747BF2B71183D00B3B753 /* CreateAccountView.swift in Sources */,
@@ -227,6 +242,7 @@
 				92B73FC72B70C18C005DE046 /* AuthenticationView.swift in Sources */,
 				92E747C32B7122F300B3B753 /* ToggleCheckBoxStyle.swift in Sources */,
 				92D1E0D22B738D8F00C6F5CC /* CustomTabView.swift in Sources */,
+				92BEF2C12B73AE8E0096EB6E /* RecomendedForYouCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
