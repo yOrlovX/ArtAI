@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     let recomendedData = RecomendedForYouCellModel.recomendedData
+    let featuredData = FeaturedStyleCellModel.featuredStylesData
     
     var body: some View {
         ZStack {
@@ -18,6 +19,7 @@ struct HomeView: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     userSection
                     imagesForYouSection
+                    featuredStylesSection
                 }
             }
         }
@@ -80,6 +82,30 @@ extension HomeView  {
                 HStack(spacing: 8) {
                     ForEach(recomendedData) { datum in
                         RecomendedForYouCell(data: datum)
+                    }
+                }
+            }
+        }
+        .padding(.horizontal, 24)
+    }
+    
+    private var featuredStylesSection: some View {
+        VStack(spacing: 16) {
+            HStack {
+                Text("Featured Styles")
+                    .font(.system(size: 24, weight: .semibold))
+                    .foregroundColor(.white)
+                Spacer()
+                Button(action: {}) {
+                    Text("All")
+                        .font(.system(size: 14, weight: .semibold))
+                        .foregroundColor(.gray)
+                }
+            }
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 8) {
+                    ForEach(featuredData) { datum in
+                        FeaturedStyleCell(data: datum)
                     }
                 }
             }
