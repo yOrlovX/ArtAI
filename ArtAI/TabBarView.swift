@@ -24,7 +24,7 @@ struct TabBarView: View {
                 .tag(3)
             Text("Activity View")
                 .tag(4)
-            Text("Profile View")
+            ProfileView()
                 .tag(5)
         }
         .overlay(alignment: .bottom) {
