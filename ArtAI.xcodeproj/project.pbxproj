@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		923468062B835B1500A501D7 /* FeaturedStyleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923468052B835B1500A501D7 /* FeaturedStyleCell.swift */; };
+		923468082B83695700A501D7 /* CommunityFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923468072B83695700A501D7 /* CommunityFeedCell.swift */; };
 		928360EE2B5E86380007C350 /* ArtAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928360ED2B5E86380007C350 /* ArtAIApp.swift */; };
 		928360F22B5E86390007C350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 928360F12B5E86390007C350 /* Assets.xcassets */; };
 		928360F52B5E86390007C350 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 928360F42B5E86390007C350 /* Preview Assets.xcassets */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		923468052B835B1500A501D7 /* FeaturedStyleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedStyleCell.swift; sourceTree = "<group>"; };
+		923468072B83695700A501D7 /* CommunityFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityFeedCell.swift; sourceTree = "<group>"; };
 		928360EA2B5E86380007C350 /* ArtAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		928360ED2B5E86380007C350 /* ArtAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtAIApp.swift; sourceTree = "<group>"; };
 		928360F12B5E86390007C350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				92BEF2BE2B73AA2F0096EB6E /* HomeView.swift */,
 				923468052B835B1500A501D7 /* FeaturedStyleCell.swift */,
 				92BEF2C02B73AE8E0096EB6E /* RecomendedForYouCell.swift */,
+				923468072B83695700A501D7 /* CommunityFeedCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				928B87632B7107CE00938786 /* ProfileView.swift in Sources */,
+				923468082B83695700A501D7 /* CommunityFeedCell.swift in Sources */,
 				92D1E0CE2B737EF500C6F5CC /* CompleteProfileView.swift in Sources */,
 				92D1E0D02B738CD100C6F5CC /* TabBarView.swift in Sources */,
 				92BEF2BF2B73AA2F0096EB6E /* HomeView.swift in Sources */,

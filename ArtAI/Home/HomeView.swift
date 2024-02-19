@@ -10,6 +10,12 @@ import SwiftUI
 struct HomeView: View {
     let recomendedData = RecomendedForYouCellModel.recomendedData
     let featuredData = FeaturedStyleCellModel.featuredStylesData
+    let communityData = CommunityFeedCellModel.communityFeedData
+    
+    let columns: [GridItem] = [
+        GridItem(.flexible(minimum: 50), spacing: 8),
+        GridItem(.flexible(minimum: 50), spacing: 8),
+    ]
     
     var body: some View {
         ZStack {
@@ -20,6 +26,7 @@ struct HomeView: View {
                     userSection
                     imagesForYouSection
                     featuredStylesSection
+                    communityFeedSection
                 }
             }
         }
@@ -112,6 +119,29 @@ extension HomeView  {
         }
         .padding(.horizontal, 24)
     }
+    
+    private var communityFeedSection: some View {
+        VStack(spacing: 16) {
+            HStack {
+                Text("Community Feed")
+                    .font(.system(size: 24, weight: .semibold))
+                    .foregroundColor(.white)
+                Spacer()
+                Button(action: {}) {
+                    Text("All")
+                        .font(.system(size: 14, weight: .semibold))
+                        .foregroundColor(.gray)
+                }
+            }
+            LazyVGrid(columns: columns, spacing: 8) {
+                ForEach(communityData, id: \.self) { datum in
+                    CommunityFeedCell(data: datum)
+                }
+            }
+        }
+        .padding(.horizontal, 24)
+    }
+    
 }
 
 struct HomeView_Previews: PreviewProvider {
