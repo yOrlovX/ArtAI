@@ -11,7 +11,8 @@ struct TextFieldModifiers: ViewModifier {
     func body(content: Content) -> some View {
         content
             .foregroundColor(.gray)
-            .frame(width: .infinity, height: 48)
+            .frame(maxWidth: .infinity)
+            .frame(height: 48)
             .overlay(
                 RoundedRectangle(cornerRadius: 8)
                     .stroke(.gray, lineWidth: 2)

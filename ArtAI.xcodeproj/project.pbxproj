@@ -14,6 +14,7 @@
 		928360F52B5E86390007C350 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 928360F42B5E86390007C350 /* Preview Assets.xcassets */; };
 		928B87602B70E95700938786 /* CreateAccountSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928B875F2B70E95700938786 /* CreateAccountSheetView.swift */; };
 		928B87632B7107CE00938786 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928B87622B7107CE00938786 /* ProfileView.swift */; };
+		9294B58C2B84A02600951565 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294B58B2B84A02600951565 /* Router.swift */; };
 		92A395F12B6916A000FE1F47 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A395F02B6916A000FE1F47 /* OnboardingView.swift */; };
 		92A395F32B69175400FE1F47 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A395F22B69175400FE1F47 /* Colors.swift */; };
 		92B73FC72B70C18C005DE046 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B73FC62B70C18C005DE046 /* AuthenticationView.swift */; };
@@ -38,6 +39,7 @@
 		928360F42B5E86390007C350 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		928B875F2B70E95700938786 /* CreateAccountSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountSheetView.swift; sourceTree = "<group>"; };
 		928B87622B7107CE00938786 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		9294B58B2B84A02600951565 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		92A395F02B6916A000FE1F47 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		92A395F22B69175400FE1F47 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		92B73FC62B70C18C005DE046 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		928360E12B5E86370007C350 = {
 			isa = PBXGroup;
 			children = (
+				9294B58B2B84A02600951565 /* Router.swift */,
 				928360EC2B5E86380007C350 /* ArtAI */,
 				928360EB2B5E86380007C350 /* Products */,
 			);
@@ -179,6 +182,8 @@
 			dependencies = (
 			);
 			name = ArtAI;
+			packageProductDependencies = (
+			);
 			productName = ArtAI;
 			productReference = 928360EA2B5E86380007C350 /* ArtAI.app */;
 			productType = "com.apple.product-type.application";
@@ -207,6 +212,8 @@
 				Base,
 			);
 			mainGroup = 928360E12B5E86370007C350;
+			packageReferences = (
+			);
 			productRefGroup = 928360EB2B5E86380007C350 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -241,6 +248,7 @@
 				92A395F12B6916A000FE1F47 /* OnboardingView.swift in Sources */,
 				92A395F32B69175400FE1F47 /* Colors.swift in Sources */,
 				92E747BF2B71183D00B3B753 /* CreateAccountView.swift in Sources */,
+				9294B58C2B84A02600951565 /* Router.swift in Sources */,
 				92B73FCA2B70C425005DE046 /* ButtonModifiers.swift in Sources */,
 				92D1E0CC2B737C7E00C6F5CC /* LoginView.swift in Sources */,
 				928360EE2B5E86380007C350 /* ArtAIApp.swift in Sources */,
