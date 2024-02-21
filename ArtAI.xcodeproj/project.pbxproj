@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		920F249C2B85EB9800E626BF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920F249B2B85EB9800E626BF /* Extensions.swift */; };
 		923468062B835B1500A501D7 /* FeaturedStyleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923468052B835B1500A501D7 /* FeaturedStyleCell.swift */; };
 		923468082B83695700A501D7 /* CommunityFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923468072B83695700A501D7 /* CommunityFeedCell.swift */; };
 		928360EE2B5E86380007C350 /* ArtAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928360ED2B5E86380007C350 /* ArtAIApp.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		920F249B2B85EB9800E626BF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		923468052B835B1500A501D7 /* FeaturedStyleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedStyleCell.swift; sourceTree = "<group>"; };
 		923468072B83695700A501D7 /* CommunityFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityFeedCell.swift; sourceTree = "<group>"; };
 		928360EA2B5E86380007C350 /* ArtAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +68,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		920F249A2B85EB8800E626BF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				920F249B2B85EB9800E626BF /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		920F249D2B85EBD400E626BF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9294B58B2B84A02600951565 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		920F249E2B85EC3100E626BF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				928360ED2B5E86380007C350 /* ArtAIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		920F249F2B85EC4600E626BF /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				92D1E0CF2B738CD100C6F5CC /* TabBarView.swift */,
+				92D1E0D12B738D8F00C6F5CC /* CustomTabView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		923868622B6FFD4D0038489C /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,7 +115,6 @@
 		928360E12B5E86370007C350 = {
 			isa = PBXGroup;
 			children = (
-				9294B58B2B84A02600951565 /* Router.swift */,
 				928360EC2B5E86380007C350 /* ArtAI */,
 				928360EB2B5E86380007C350 /* Products */,
 			);
@@ -97,17 +131,18 @@
 		928360EC2B5E86380007C350 /* ArtAI */ = {
 			isa = PBXGroup;
 			children = (
-				928360ED2B5E86380007C350 /* ArtAIApp.swift */,
+				920F249E2B85EC3100E626BF /* App */,
 				92BEF2BD2B73AA210096EB6E /* Home */,
 				92A395EE2B69163100FE1F47 /* Onboarding */,
 				923868622B6FFD4D0038489C /* Authentication */,
 				928B87612B7107AA00938786 /* Profile */,
 				92B73FC82B70C402005DE046 /* ViewModifiers */,
 				92A395EF2B69164900FE1F47 /* Helpers */,
+				920F249A2B85EB8800E626BF /* Extensions */,
+				920F249D2B85EBD400E626BF /* Router */,
+				920F249F2B85EC4600E626BF /* TabBar */,
 				928360F12B5E86390007C350 /* Assets.xcassets */,
 				928360F32B5E86390007C350 /* Preview Content */,
-				92D1E0CF2B738CD100C6F5CC /* TabBarView.swift */,
-				92D1E0D12B738D8F00C6F5CC /* CustomTabView.swift */,
 			);
 			path = ArtAI;
 			sourceTree = "<group>";
@@ -255,6 +290,7 @@
 				928B87602B70E95700938786 /* CreateAccountSheetView.swift in Sources */,
 				92E747C12B711C1200B3B753 /* TextFieldModifiers.swift in Sources */,
 				923468062B835B1500A501D7 /* FeaturedStyleCell.swift in Sources */,
+				920F249C2B85EB9800E626BF /* Extensions.swift in Sources */,
 				92B73FC72B70C18C005DE046 /* AuthenticationView.swift in Sources */,
 				92E747C32B7122F300B3B753 /* ToggleCheckBoxStyle.swift in Sources */,
 				92D1E0D22B738D8F00C6F5CC /* CustomTabView.swift in Sources */,

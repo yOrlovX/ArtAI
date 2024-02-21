@@ -11,6 +11,11 @@ import SwiftUI
 struct ArtAIApp: App {
     @ObservedObject var router = Router.shared
     
+    init() {
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+    }
+    
     var body: some Scene {
         WindowGroup {
             NavigationStack(path: $router.path) {
@@ -23,9 +28,13 @@ struct ArtAIApp: App {
                             LoginView()
                         case .createAccount:
                             CreateAccountView()                            
+                        case .completeProfile:
+                            CompleteProfileView()
                         }
                     }
             }
+            .navigationBarTitleDisplayMode(.inline)
+            .tint(.white)
             .environmentObject(router)
         }
     }

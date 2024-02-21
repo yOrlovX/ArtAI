@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
-import FlowStacks
 
 enum Route: Hashable {
     case authentication
     case login
     case createAccount
+    case completeProfile
 }
 
 final class Router: ObservableObject {
@@ -29,6 +29,9 @@ final class Router: ObservableObject {
     
     func showCreateAccount() {
         path.append(.createAccount)
+    }
+    func showCompleteProfile() {
+        path.append(.completeProfile)
     }
     
 //    func showOrderConfirmation() {

@@ -17,15 +17,11 @@ struct CreateAccountView: View {
             Color.black
                 .ignoresSafeArea()
             VStack(alignment: .leading, spacing: 20) {
-                Spacer()
-                Text("Create an Account")
-                    .foregroundColor(.white)
-                    .font(.system(size: 24, weight: .medium))
-                    .padding(.horizontal, 24)
                 Text("Create a ART.AI account to gain access to more creation tools, publish & curate your AI generated art!")
                     .foregroundColor(.gray)
                     .font(.system(size: 14, weight: .medium))
                     .padding(.horizontal, 24)
+                    .multilineTextAlignment(.center)
                 Text("Email")
                     .foregroundColor(.gray)
                     .font(.system(size: 14, weight: .medium))
@@ -57,6 +53,7 @@ struct CreateAccountView: View {
                 }
             }
         }
+        .navigationTitle("Create an Account")
     }
 }
 
