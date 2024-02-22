@@ -16,11 +16,6 @@ struct LoginView: View {
             Color.black
                 .ignoresSafeArea()
             VStack(alignment: .leading, spacing: 20) {
-                Spacer()
-                Text("Login")
-                    .foregroundColor(.white)
-                    .font(.system(size: 24, weight: .medium))
-                    .padding(.horizontal, 24)
                 Text("Enter your registered email & password.")
                     .foregroundColor(.gray)
                     .font(.system(size: 14, weight: .medium))
@@ -45,12 +40,22 @@ struct LoginView: View {
                     .foregroundColor(.red))
                 .padding()
                 .modifier(TextFieldModifiers())
-                
                 Spacer()
                 Spacer()
                 Button(action: {}) {
                     Text("Login")
                         .modifier(PrimaryButtonModifier())
+                }
+            }
+            .padding(.top, 20)
+        }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                HStack {
+                    Text("Login")
+                        .foregroundColor(Colors.navTitleColor)
+                        .font(.system(size: 24, weight: .medium))
+                        .padding(.horizontal, 24)
                 }
             }
         }

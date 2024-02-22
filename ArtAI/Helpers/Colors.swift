@@ -9,4 +9,5 @@ import SwiftUI
 
 struct Colors {
     static var lightGreen = Color("light_green")
+    static var navTitleColor = Color("navTitleColor")
 }

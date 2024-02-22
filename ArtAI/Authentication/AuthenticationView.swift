@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AuthenticationView: View {
     @State private var showCreateAccountSheet = false
-        
+    
     var body: some View {
         ZStack(alignment: .top) {
             Color.black
@@ -35,7 +35,7 @@ struct AuthenticationView: View {
                             Text("Create an Account")
                                 .modifier(PrimaryButtonModifier())
                         }
-                        Button(action: {}) {
+                        NavigationLink(destination: LoginView()) {
                             Text("Login")
                                 .modifier(ClearButtonModifier())
                         }
