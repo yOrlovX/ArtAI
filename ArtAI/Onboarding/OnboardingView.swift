@@ -49,7 +49,7 @@ private extension OnboardingView {
                 Button(action: { onboardingState = .authentication }) {
                     Image(systemName: "xmark")
                         .resizable()
-                        .frame(width: 36, height: 36)
+                        .frame(width: 18, height: 18)
                         .foregroundColor(.white)
                         .padding(24)
                 }
@@ -86,7 +86,7 @@ private extension OnboardingView {
                 Button(action: { onboardingState = .authentication }) {
                     Image(systemName: "xmark")
                         .resizable()
-                        .frame(width: 36, height: 36)
+                        .frame(width: 18, height: 18)
                         .foregroundColor(.white)
                         .padding(24)
                 }
@@ -123,7 +123,7 @@ private extension OnboardingView {
                 Button(action: { onboardingState = .authentication }) {
                     Image(systemName: "xmark")
                         .resizable()
-                        .frame(width: 36, height: 36)
+                        .frame(width: 18, height: 18)
                         .foregroundColor(.white)
                         .padding(24)
                 }

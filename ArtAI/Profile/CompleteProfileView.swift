@@ -16,7 +16,6 @@ struct CompleteProfileView: View {
             Color.black
                 .ignoresSafeArea()
             VStack {
-                xmarkButtonSection
                 photoSection
                 userInfoSection
                 Spacer()
@@ -24,6 +23,14 @@ struct CompleteProfileView: View {
                     Text("Complete Profile")
                         .modifier(PrimaryButtonModifier())
                 }
+            }
+        }
+        .toolbar {
+            Button(action: {  }) {
+                Image(systemName: "xmark")
+                    .resizable()
+                    .frame(width: 18, height: 18)
+                    .foregroundColor(.white)
             }
         }
     }
@@ -68,22 +75,6 @@ extension CompleteProfileView {
                 .foregroundColor(.white)
                 .font(.system(size: 16, weight: .semibold))
         }
-    }
-    
-    private var xmarkButtonSection: some View {
-        HStack {
-            Text("Complete Profile")
-                .foregroundColor(.white)
-                .font(.system(size: 24, weight: .medium))
-            Spacer()
-            Button(action: {}) {
-                Image(systemName: "xmark")
-                    .resizable()
-                    .frame(width: 36, height: 36)
-                    .foregroundColor(.white)
-            }
-        }
-        .padding(.horizontal, 24)
     }
 }
 

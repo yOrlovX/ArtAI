@@ -15,7 +15,7 @@ struct CommunityFeedCell: View {
             Image(data.image)
                 .resizable()
                 .scaledToFill()
-                .frame(width: .infinity, height: .infinity)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .cornerRadius(4)
                 .overlay {
                     VStack(alignment: .leading) {

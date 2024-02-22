@@ -13,6 +13,8 @@ struct CreateAccountView: View {
     @State private var agreeTerms = false
     @State private var showCreatingAccountState = false
     
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         ZStack {
             Color.black
@@ -48,13 +50,16 @@ struct CreateAccountView: View {
                     .toggleStyle(ToggleCheckBoxStyle())
                     .padding(.horizontal, 24)
                 Spacer()
-                Button(action: { showCreatingAccountState = true }) {
+                Button(action: { showCreatingAccountState = true
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                        dismiss()
+                    }
+                }) {
                     Text("Create an Account")
                         .modifier(PrimaryButtonModifier())
                 }
             }
         }
-        .navigationTitle("Create an Account")
         .fullScreenCover(isPresented: $showCreatingAccountState) {
             creatingAccountState
         }

@@ -9,7 +9,6 @@ import SwiftUI
 
 struct AuthenticationView: View {
     @State private var showCreateAccountSheet = false
-    @EnvironmentObject var router:  Router
         
     var body: some View {
         ZStack(alignment: .top) {
@@ -36,7 +35,7 @@ struct AuthenticationView: View {
                             Text("Create an Account")
                                 .modifier(PrimaryButtonModifier())
                         }
-                        Button(action: { router.showLogin() }) {
+                        Button(action: {}) {
                             Text("Login")
                                 .modifier(ClearButtonModifier())
                         }

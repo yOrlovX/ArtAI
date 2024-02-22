@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct CreateAccountSheetView: View {
-    @EnvironmentObject var router:  Router
     @Binding var showCreateAccountSheet: Bool
     
     var body: some View {
@@ -29,7 +28,7 @@ struct CreateAccountSheetView: View {
                         .font(.system(size: 14, weight: .medium))
                         .foregroundColor(.gray)
                         .padding(.horizontal, 24)
-                    Button(action: { router.showCreateAccount()
+                    Button(action: { 
                        showCreateAccountSheet = false
                     }) {
                         Text("Create an Account")
