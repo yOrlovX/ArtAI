@@ -24,7 +24,6 @@ struct CreateAccountView: View {
                     .foregroundColor(.gray)
                     .font(.system(size: 14, weight: .medium))
                     .padding(.horizontal, 24)
-                    .multilineTextAlignment(.center)
                 Text("Email")
                     .foregroundColor(.gray)
                     .font(.system(size: 14, weight: .medium))
@@ -59,11 +58,21 @@ struct CreateAccountView: View {
                         .modifier(PrimaryButtonModifier())
                 }
             }
+            .padding(.top, 20)
         }
         .fullScreenCover(isPresented: $showCreatingAccountState) {
             creatingAccountState
         }
-        
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                HStack {
+                    Text("Create an Account")
+                        .foregroundColor(Colors.navTitleColor)
+                        .font(.system(size: 24, weight: .medium))
+                        .padding(.horizontal, 24)
+                }
+            }
+        }
     }
 }
 

@@ -50,7 +50,7 @@ private extension OnboardingView {
                     Image(systemName: "xmark")
                         .resizable()
                         .frame(width: 18, height: 18)
-                        .foregroundColor(.white)
+                        .foregroundColor(Colors.navTitleColor)
                         .padding(24)
                 }
             }
@@ -87,7 +87,7 @@ private extension OnboardingView {
                     Image(systemName: "xmark")
                         .resizable()
                         .frame(width: 18, height: 18)
-                        .foregroundColor(.white)
+                        .foregroundColor(Colors.navTitleColor)
                         .padding(24)
                 }
             }
@@ -124,7 +124,7 @@ private extension OnboardingView {
                     Image(systemName: "xmark")
                         .resizable()
                         .frame(width: 18, height: 18)
-                        .foregroundColor(.white)
+                        .foregroundColor(Colors.navTitleColor)
                         .padding(24)
                 }
             }

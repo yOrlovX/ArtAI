@@ -31,7 +31,7 @@ struct AuthenticationView: View {
                             .font(.system(size: 48))
                             .multilineTextAlignment(.center)
                             .foregroundColor(Colors.lightGreen)
-                        Button(action: { showCreateAccountSheet.toggle() }) {
+                        NavigationLink(destination: CreateAccountView()) {
                             Text("Create an Account")
                                 .modifier(PrimaryButtonModifier())
                         }
@@ -43,10 +43,10 @@ struct AuthenticationView: View {
                 }
             }
         }
-        .sheet(isPresented: $showCreateAccountSheet) {
-            CreateAccountSheetView(showCreateAccountSheet: $showCreateAccountSheet)
-                .presentationDetents([.medium])
-        }
+//        .sheet(isPresented: $showCreateAccountSheet) {
+//            CreateAccountSheetView(showCreateAccountSheet: $showCreateAccountSheet)
+//                .presentationDetents([.medium])
+//        }
     }
 }
 

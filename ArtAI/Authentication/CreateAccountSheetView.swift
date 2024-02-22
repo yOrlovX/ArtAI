@@ -28,7 +28,7 @@ struct CreateAccountSheetView: View {
                         .font(.system(size: 14, weight: .medium))
                         .foregroundColor(.gray)
                         .padding(.horizontal, 24)
-                    Button(action: { 
+                    Button(action: {
                        showCreateAccountSheet = false
                     }) {
                         Text("Create an Account")
