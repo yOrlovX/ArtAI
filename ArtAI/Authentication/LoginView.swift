@@ -11,6 +11,8 @@ struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
     
+    @EnvironmentObject var router: Router
+    
     var body: some View {
         ZStack {
             Color.black
@@ -42,7 +44,7 @@ struct LoginView: View {
                 .modifier(TextFieldModifiers())
                 Spacer()
                 Spacer()
-                NavigationLink(destination: TabBarView()) {
+                Button(action: { router.push(.home) }) {
                     Text("Login")
                         .modifier(PrimaryButtonModifier())
                 }

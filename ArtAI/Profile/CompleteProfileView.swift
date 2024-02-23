@@ -11,6 +11,8 @@ struct CompleteProfileView: View {
     @State private var nickName = ""
     @State private var birthDate = Date()
     
+    @EnvironmentObject var router: Router
+    
     var body: some View {
         ZStack {
             Color.black

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		920F249C2B85EB9800E626BF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920F249B2B85EB9800E626BF /* Extensions.swift */; };
+		922BF9682B8875FF00EA164B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BF9672B8875FF00EA164B /* Router.swift */; };
+		922BF96A2B88762200EA164B /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BF9692B88762200EA164B /* Route.swift */; };
 		923468062B835B1500A501D7 /* FeaturedStyleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923468052B835B1500A501D7 /* FeaturedStyleCell.swift */; };
 		923468082B83695700A501D7 /* CommunityFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923468072B83695700A501D7 /* CommunityFeedCell.swift */; };
 		928360EE2B5E86380007C350 /* ArtAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928360ED2B5E86380007C350 /* ArtAIApp.swift */; };
@@ -32,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		920F249B2B85EB9800E626BF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		922BF9672B8875FF00EA164B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		922BF9692B88762200EA164B /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		923468052B835B1500A501D7 /* FeaturedStyleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedStyleCell.swift; sourceTree = "<group>"; };
 		923468072B83695700A501D7 /* CommunityFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityFeedCell.swift; sourceTree = "<group>"; };
 		928360EA2B5E86380007C350 /* ArtAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +81,8 @@
 		920F249D2B85EBD400E626BF /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				922BF9672B8875FF00EA164B /* Router.swift */,
+				922BF9692B88762200EA164B /* Route.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -284,6 +290,8 @@
 				92D1E0CC2B737C7E00C6F5CC /* LoginView.swift in Sources */,
 				928360EE2B5E86380007C350 /* ArtAIApp.swift in Sources */,
 				928B87602B70E95700938786 /* CreateAccountSheetView.swift in Sources */,
+				922BF96A2B88762200EA164B /* Route.swift in Sources */,
+				922BF9682B8875FF00EA164B /* Router.swift in Sources */,
 				92E747C12B711C1200B3B753 /* TextFieldModifiers.swift in Sources */,
 				923468062B835B1500A501D7 /* FeaturedStyleCell.swift in Sources */,
 				920F249C2B85EB9800E626BF /* Extensions.swift in Sources */,

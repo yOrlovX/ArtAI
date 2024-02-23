@@ -10,6 +10,8 @@ import SwiftUI
 struct CreateAccountSheetView: View {
     @Binding var showCreateAccountSheet: Bool
     
+    @EnvironmentObject var router: Router
+    
     var body: some View {
         ZStack {
             Color.black
@@ -30,6 +32,7 @@ struct CreateAccountSheetView: View {
                         .padding(.horizontal, 24)
                     Button(action: {
                        showCreateAccountSheet = false
+                        router.push(.createAccount)
                     }) {
                         Text("Create an Account")
                             .modifier(PrimaryButtonModifier())

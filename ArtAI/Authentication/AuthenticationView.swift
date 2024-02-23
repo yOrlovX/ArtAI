@@ -10,6 +10,8 @@ import SwiftUI
 struct AuthenticationView: View {
     @State private var showCreateAccountSheet = false
     
+    @EnvironmentObject var router: Router
+    
     var body: some View {
         ZStack(alignment: .top) {
             Color.black
@@ -31,11 +33,11 @@ struct AuthenticationView: View {
                             .font(.system(size: 48))
                             .multilineTextAlignment(.center)
                             .foregroundColor(Colors.lightGreen)
-                        NavigationLink(destination: CreateAccountView()) {
+                        Button(action: { showCreateAccountSheet = true }) {
                             Text("Create an Account")
                                 .modifier(PrimaryButtonModifier())
                         }
-                        NavigationLink(destination: LoginView()) {
+                        Button(action: { router.push(.login)}) {
                             Text("Login")
                                 .modifier(ClearButtonModifier())
                         }
@@ -43,10 +45,10 @@ struct AuthenticationView: View {
                 }
             }
         }
-//        .sheet(isPresented: $showCreateAccountSheet) {
-//            CreateAccountSheetView(showCreateAccountSheet: $showCreateAccountSheet)
-//                .presentationDetents([.medium])
-//        }
+        .sheet(isPresented: $showCreateAccountSheet) {
+            CreateAccountSheetView(showCreateAccountSheet: $showCreateAccountSheet)
+                .presentationDetents([.medium])
+        }
     }
 }
 

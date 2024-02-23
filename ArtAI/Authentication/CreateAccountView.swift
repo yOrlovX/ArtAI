@@ -13,6 +13,8 @@ struct CreateAccountView: View {
     @State private var agreeTerms = false
     @State private var showCreatingAccountState = false
     
+    @EnvironmentObject var router: Router
+    
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -52,6 +54,7 @@ struct CreateAccountView: View {
                 Button(action: { showCreatingAccountState = true
                     DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                         dismiss()
+                        router.push(.completeProfile)
                     }
                 }) {
                     Text("Create an Account")
